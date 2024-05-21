@@ -196,3 +196,116 @@ body {
     margin-bottom: 50px; 
 }
 
+.container-img1,
+.container-img2,
+.container-img3 {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 40px; /
+}
+
+.container-img1 .row1,
+.container-img3 .row1 {
+    flex: 0 0 100%; 
+}
+
+.container-img1 .row2,
+.container-img3 .row2 {
+    flex: 0 0 100%; 
+}
+
+@media only screen and (max-width: 768px) {
+    .container-img1 .row1,
+    .container-img3 .row1 {
+        order: 2; 
+    }
+
+    .container-img1 .row2,
+    .container-img3 .row2 {
+        order: 1;
+    }
+}
+
+.container-img2 .row1,
+.container-img2 .row2 {
+    flex: 0 0 50%;
+}
+
+.row1,
+.row2 {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-service {
+    color: #11101b;
+    font-size: 45px;
+    font-family: poppins;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container-img1 .row1,
+    .container-img2 .row1,
+    .container-img3 .row1,
+    .container-img1 .row2,
+    .container-img2 .row2,
+    .container-img3 .row2 {
+        flex: 0 0 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container-img1 .row1,
+    .container-img2 .row1,
+    .container-img3 .row1,
+    .container-img1 .row2,
+    .container-img2 .row2,
+    .container-img3 .row2 {
+        flex: 0 0 45%;
+    }
+
+    #title-service {
+        font-size: 60px; 
+    }
+}
+
+#img-service1,
+#img-service2,
+#img-service3 {
+    width: 100%; 
+    max-width: 1140px; 
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    #img-service1,
+    #img-service2,
+    #img-service3 {
+        width: 600px; 
+    }
+}
+
+#text-service1 h1,
+#text-service2 h1,
+#text-service3 h1 {
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+#text-service1 p,
+#text-service2 p,
+#text-service3 p {
+    font-size: 20px;
+}
