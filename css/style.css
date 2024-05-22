@@ -7,6 +7,7 @@
 body {
     background-color: #d5e9ea;
     font-family: "Google Sans", sans-serif;
+    margin-top: 150px;
 }
 
 /* page index */
@@ -326,8 +327,7 @@ body {
     font-size: 45px;
     text-align: center;
     margin-top: 60px;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 50px;
+    font-family: poppins;
 }
 
 .text-obdevis {
@@ -384,8 +384,9 @@ body {
     font-size: 2.5em;
     text-align: center;
     margin-top: 60px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
     margin-bottom: 50px;
+    
 }
 
 .label-obdevis {
@@ -406,15 +407,7 @@ body {
     border-radius: 5px;
 }
 
-#email-obdevis {
-    width: 100%;
-    max-width: 400px;
-    padding: 10px;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+
 
 .btn-obdevis {
     width: 100%;
