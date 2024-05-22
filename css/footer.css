@@ -93,3 +93,9 @@ a:hover {
 .footer-subtitle {  
     color: white;
 }
+a {
+    color: white;
+}
+a:hover {
+    color: #d5e9ea;
+}
