@@ -9,6 +9,8 @@ body {
     font-family: "Google Sans", sans-serif;
 }
 
+/* page index */
+
 #title1 {
     color: #11101b;
     font-size: 45px;
@@ -196,6 +198,9 @@ body {
     margin-bottom: 50px; 
 }
 
+/* fin page index */
+/* page nos services */
+
 .container-img1,
 .container-img2,
 .container-img3 {
@@ -308,4 +313,175 @@ body {
 #text-service2 p,
 #text-service3 p {
     font-size: 20px;
+    text-align: center;
+    margin-right: 40px;
+    margin-left: 40px;
 }
+
+/* fin page nos services */
+/* page obtenir un devis */
+
+#title-obdevis {
+    color: #11101b;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 60px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 50px;
+}
+
+.text-obdevis {
+    font-size: 20px;
+    text-align: justify;
+    margin: 0 auto 50px; 
+    max-width: calc(100% - 1000px); 
+    padding: 0 20px; 
+}
+
+@media only screen and (max-width: 768px) {
+    #title-obdevis {
+        font-size: 2em; 
+    }
+
+    .text-obdevis {
+        margin: 0 20px 50px 20px; 
+        max-width: 100%; 
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    #title-obdevis {
+        font-size: 60px; 
+        margin-bottom: 50px;
+    }
+
+    .text-obdevis {
+        margin: 0 auto 50px; 
+        max-width: 1000px; 
+    }
+}
+.container-obdevis {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px; 
+    text-align: center;
+}
+
+#formulaire-obdevis, #image-obdevis {
+    width: 50%;
+    max-width: 570px;
+    box-sizing: border-box;
+    margin-bottom: 20px; 
+}
+
+#title-obdevis2 {
+    color: #11101b;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 60px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 50px;
+}
+
+.label-obdevis {
+    font-size: 1.25em;
+    text-align: left;
+    display: block;
+    margin: 10px 0 5px;
+    margin-left: 80px;
+}
+
+.input-obdevis {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#email-obdevis {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-obdevis {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    background-color: #11101b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.25em;
+}
+
+#image-obdevis img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+#message-obdevis {
+    width: 500px;
+    height: 200px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container-obdevis {
+        flex-direction: column-reverse;
+    }
+
+    #image-obdevis, #formulaire-obdevis {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #title-obdevis {
+        font-size: 2.5em;
+    }
+
+    #title-obdevis2 {
+        font-size: 2em;
+    }
+
+    .label-obdevis {
+        margin: 0 20px 10px 20px;
+        font-size: 1em;
+    }
+
+    .input-obdevis, .btn-obdevis, #email-obdevis, #message-obdevis {
+        max-width: 100%;
+    }
+
+    .text-obdevis {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+
+@media only screen and (min-width: 769px) {
+    #title-obdevis {
+        font-size: 60px;
+    }
+
+    .text-obdevis {
+        margin-right: 500px;
+        margin-left: 500px;
+    }
+}
+/* fin page obtenir un devis */
+/* page contact */
