@@ -74,10 +74,11 @@ h3 {
 
 a {
     text-decoration: none;
+    color: #fefefe;
 }
 
 a:hover {
-    color: #fefefe;
+    color: #d5e9ea;
 }
 
 /* Media queries pour les petits écrans */
@@ -92,10 +93,4 @@ a:hover {
 
 .footer-subtitle {  
     color: white;
-}
-a {
-    color: white;
-}
-a:hover {
-    color: #d5e9ea;
 }
