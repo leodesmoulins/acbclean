@@ -10,30 +10,10 @@
     <link rel="icon" href="../images/logo.png">
 </head>
 <body>
-    <header>
-        <div class="logo"><a href="../index.html" class="link">ACB CLEAN</a></div>
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <nav class="nav-bar">
-            <ul>
-                <li>
-                    <a href="../index.html">Accueil</a>
-                </li>
-                <li>
-                    <a href="obtenir-un-devis.html" class="active">Obtenir un devis</a>
-                </li>
-                <li>
-                    <a href="nos-services.html" class="">Nos Services</a>
-                </li>
-                <li>
-                    <a href="contact.html" class="">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+
+    <?php 
+    include "../include/navbar.php";
+    ?>
 
     <h1 id="title-obdevis">Bienvenue chez ACB CLEAN</h1>
     <p class="text-obdevis">
@@ -78,22 +58,9 @@
         </div>
     </div>
 
-    <footer>
-        <div class="container3">
-            <div class="footer-content">
-                <h3 id="footer-title">ACB CLEAN</h3>
-                <p class="footer-subtitle">email : <a href="mailto:acbclean72@gmail.com" class="contact-link">acbclean72@gmail.com</a></p>
-                <p class="footer-subtitle">Téléphone : <a href="tel:0618331481" class="contact-link">06 18 33 14 81</a> </p>
-            </div>
-            <div class="footer-content">
-                <ul class="list">
-                    <li><a href="obtenir-un-devis.html" class="link">Obtenir un devis</a></li>
-                    <li><a href="nos-services.html" class="link">Nos Services</a></li>
-                    <li><a href="contact.html" class="link">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+    <?php 
+    include "../include/footer.php";
+    ?>
     <script src="../script/script.js"></script>
 </body>
 </html>
