@@ -1,24 +1,29 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Fonction pour inclure un fichier HTML et exécuter une callback après l'inclusion
+    
     function includeHTML(elementId, filePath, callback) {
         fetch(filePath)
             .then(response => {
                 if (!response.ok) {
-                    throw new Error('Network response was not ok');
+                    throw new Error('Failed to fetch file: ' + filePath);
                 }
                 return response.text();
             })
             .then(data => {
-                document.getElementById(elementId).innerHTML = data;
-                if (callback) callback(); // Exécuter la callback après l'inclusion
+                const targetElement = document.getElementById(elementId);
+                if (targetElement) {
+                    targetElement.innerHTML = data;
+                    if (callback) callback();
+                } else {
+                    throw new Error('Target element not found: ' + elementId);
+                }
             })
             .catch(error => {
-                console.error('There was a problem with the fetch operation:', error);
+                console.error('Error loading HTML file:', error.message);
             });
     }
 
-    // Charger la barre de navigation et attacher l'événement au hamburger après le chargement
-    includeHTML('navbar', 'include/navbar.html', function() {
+    
+    includeHTML('navbar', '../include/navbar.html', function() {
         const hamburger = document.querySelector(".hamburger");
         if (hamburger) {
             hamburger.onclick = function() {
@@ -30,6 +35,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // Charger le pied de page
-    includeHTML('footer', 'include/footer.html');
+    
+    includeHTML('footer', '../include/footer.html');
 });
