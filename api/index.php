@@ -10,6 +10,10 @@
     <link rel="icon" href="../images/logo.png">
 </head>
 <body>
+    <?php
+    // api/index.php
+    phpinfo();
+    ?>
     <?php 
     include "include/navbar.php";
     ?>
