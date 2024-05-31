@@ -3,7 +3,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: "Google Sans", sans-serif; /* Correction du nom de la police */
+    font-family: "Google Sans", sans-serif; 
     box-sizing: border-box;
 }
 
@@ -34,7 +34,6 @@ header {
 .nav-bar {
     display: flex;
     align-items: center;
-    
 }
 
 .nav-bar ul {
@@ -57,6 +56,11 @@ header {
 }
 
 .nav-bar ul li a.active {
+    color: #11101b;
+    background: #fefefe;
+}
+
+.focus:focus {
     color: #11101b;
     background: #fefefe;
 }
@@ -87,7 +91,7 @@ header {
     }
 
     .nav-bar {
-        display: none; /* Modification */
+        display: none; 
         flex-direction: column;
         position: absolute;
         top: 80px;
@@ -100,7 +104,7 @@ header {
     }
 
     .nav-bar.active {
-        display: flex; /* Modification */
+        display: flex; 
     }
 
     .nav-bar ul {
@@ -114,15 +118,20 @@ header {
 
     .nav-bar.active ul {
         opacity: 1;
-        margin-top: 20px; /* Ajustement de la marge supérieure */
+        margin-top: 20px; 
     }
 
     .nav-bar ul li {
-        margin: 12px 5px; /* Ajustement de la marge autour des boutons */
+        margin: 12px 5px; 
     }
 
     .nav-bar ul li a {
         color: black;
         background-color: #fefefe;
     }
+}
+
+.focus {
+    color: #fefefe;
+    background: #11101b;
 }
