@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
             });
     }
 
-    
     includeHTML('navbar', '../include/navbar.html', function() {
         const hamburger = document.querySelector(".hamburger");
         if (hamburger) {
@@ -33,16 +32,17 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             };
         }
+
         const links = document.querySelectorAll('.nav-link');
-        const currentPath = window.location.pathname;
+        const currentURL = window.location.href;
 
         links.forEach(link => {
-            if (link.href.includes(currentPath)) {
+            const linkURL = link.href;
+            if (currentURL === linkURL) {
                 link.classList.add('active');
             }
         });
     });
 
-    
     includeHTML('footer', '../include/footer.html');
 });
